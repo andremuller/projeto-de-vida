@@ -20,10 +20,14 @@ const routes: Routes = [
   { path: 'carreira', loadChildren: './carreira/carreira.module#CarreiraPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'avatar', loadChildren: './avatar/avatar.module#AvatarPageModule' },
+<<<<<<< HEAD
   { path: 'linguagem-desc', loadChildren: './linguagem-desc/linguagem-desc.module#LinguagemDescPageModule' },
   { path: 'matematica-desc', loadChildren: './matematica-desc/matematica-desc.module#MatematicaDescPageModule' },
   { path: 'naturais-desc', loadChildren: './naturais-desc/naturais-desc.module#NaturaisDescPageModule' },
   { path: 'humanas-desc', loadChildren: './humanas-desc/humanas-desc.module#HumanasDescPageModule' }
+=======
+  { path: 'escolha-avatar', loadChildren: './escolha-avatar/escolha-avatar.module#EscolhaAvatarPageModule' }
+>>>>>>> ee2d462aeba745700f75a320ee7b0a390ca630df
 ];
 
 @NgModule({
