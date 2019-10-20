@@ -48,6 +48,8 @@ export class AppComponent {
     this.router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationEnd && event.url === '/landing') {
         this.menuCtrl.enable(false);
+      } else {
+        this.menuCtrl.enable(true);
       }
     });
   }

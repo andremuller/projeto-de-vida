@@ -2,19 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-carreira',
-  templateUrl: './carreira.page.html',
-  styleUrls: ['./carreira.page.scss'],
+    selector: 'app-carreira',
+    templateUrl: './carreira.page.html',
+    styleUrls: ['./carreira.page.scss']
 })
 export class CarreiraPage implements OnInit {
+    constructor(public navCtrl: NavController) {}
 
-  constructor(public navCtrl: NavController) { }
+    ngOnInit() {}
 
-  ngOnInit() {
-  }
-
-  navigate(url){
-    this.navCtrl.navigateForward(url);
-  }
-
+    navigate(url: string) {
+        this.navCtrl.navigateForward(url);
+    }
 }
