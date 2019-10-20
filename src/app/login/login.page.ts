@@ -32,9 +32,9 @@ export class LoginPage implements OnInit {
                     this.dadosService.ensinoMedio =
                         result.data.ensinoMedio === 1;
                     if (this.dadosService.ensinoMedio) {
-                        this.navCtrl.navigateForward('home');
+                        this.navCtrl.navigateForward('avatar');
                     } else {
-                        this.navCtrl.navigateForward('home');
+                        this.navCtrl.navigateForward('iniciar-trilha');
                     }
                 } else {
                     this.naoEncontrado = true;

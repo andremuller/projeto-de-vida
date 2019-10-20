@@ -25,6 +25,8 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+@import "variables.scss";
+
 @font-face {
     font-family: "Montserrat-Regular";
     src: url("assets/fonts/Montserrat-Regular.ttf");
@@ -46,5 +48,6 @@
 
 ion-toolbar {
     --color: white; /* rgb(108, 193, 187); */
-    --background: rgb(48, 33, 78);
+    --background: $roxo;
 }
+

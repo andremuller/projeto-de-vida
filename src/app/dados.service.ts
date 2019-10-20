@@ -9,5 +9,7 @@ export class DadosService {
   public matricula: string;
   public ensinoMedio: boolean;
 
-  constructor() { }
+  constructor() { 
+    this.nome = 'João Almeida';
+  }
 }
