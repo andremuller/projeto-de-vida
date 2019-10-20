@@ -1,14 +1,30 @@
 <ion-content>
-<div class="escolha">ESCOLHA SEU AVATAR INICIAL</div>
-<div class="avatares">
-  <div class="avatar avatar1"></div>
-  <div class="avatar avatar2"></div>
-  <div class="avatar avatar3"></div>
-  <div class="avatar avatar4"></div>
-  <div class="avatar avatar5"></div>
-  <div class="avatar avatar6"></div>
-</div>
-<div class="botoes">
-  <button>Customize</button>
-</div>
+  <div class="container">
+    <div class="escolha">
+      <img src="../../assets/images/escolha-avatar.png">
+    </div>
+    <div class="avatares">
+      <div class="avatar">
+        <img (click)="selecaoAvatar(1)" src="../../assets/images/avatar1.png">
+      </div>
+      <div class="avatar">
+        <img (click)="selecaoAvatar(2)" src="../../assets/images/avatar2.png">
+      </div>
+      <div class="avatar">
+        <img (click)="selecaoAvatar(3)" src="../../assets/images/avatar3.png">
+      </div>
+      <div class="avatar">
+        <img (click)="selecaoAvatar(4)" src="../../assets/images/avatar4.png">
+      </div>
+      <div class="avatar">
+        <img (click)="selecaoAvatar(5)" src="../../assets/images/avatar5.png">
+      </div>
+      <div class="avatar">
+        <img (click)="selecaoAvatar(6)" src="../../assets/images/avatar6.png">
+      </div>
+    </div>
+    <div class="botoes">
+      <button>Customize</button>
+    </div>
+  </div>
 </ion-content>

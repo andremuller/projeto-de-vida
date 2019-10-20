@@ -4,6 +4,7 @@ import { Platform, MenuController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
+import { DadosService } from './dados.service';
 
 @Component({
     selector: 'app-root',
@@ -34,12 +35,15 @@ export class AppComponent {
         }
     ];
 
+    public imagemAvatar: string;
+
     constructor(
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private menuCtrl: MenuController,
-        private router: Router
+        private router: Router,
+        private dadosService: DadosService,
     ) {
         this.initializeApp();
     }
@@ -50,9 +54,13 @@ export class AppComponent {
             this.splashScreen.hide();
         });
 
+        this.dadosService.avatarAtual$.subscribe(avatarId =>{
+            this.imagemAvatar = `../assets/images/avatar${avatarId}.png`;
+        });
+
         this.router.events.subscribe((event: RouterEvent) => {
             if (event instanceof NavigationEnd && event.url) {
-                if (event.url === '/landing' 
+                if (event.url === '/landing'
                     || event.url === '/login'
                     || event.url === '/iniciar-trilha'
                     || event.url === '/avatar'

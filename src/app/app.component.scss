@@ -1,5 +1,5 @@
 .avatar {
-    background-image: url(../assets/images/avatar.jpg);
+    background-image: url(../assets/images/fundo-avatar-menu.png);
     width: 200px;
     height: 200px;
     background-position: center center;
@@ -9,4 +9,8 @@
     margin-right: auto;
     margin-bottom: 35px;
     margin-top: 40px;    
+
+    img {
+        height: 100%;
+    }
 }

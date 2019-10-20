@@ -4,40 +4,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 100%;
+    min-width: 50%;
     min-height: 100%;
     overflow: auto;
     justify-content: flex-start;
+    padding: 10%;
 
     .escolha {
-
+        margin-bottom: 40px;
     }
     .avatares {
-        .avatar {
+        display: flex;
+        flex-wrap: wrap;
 
-        }
-        .avatar1 {
-            
-        }
-        .avatar2 {
-            
-        }
-        .avatar3 {
-            
-        }
-        .avatar4 {
-            
-        }
-        .avatar5 {
-            
-        }
-        .avatar6 {
-            
+        .avatar {
+            flex: 0 0 30%;
+            margin: 1.5%;
         }
     }
     .botoes {
         button {
-
+            background-color: #e2f2f5;
+            padding: 10px 30px;
+            font-size: 25px;
+            border-radius: 5px;
+            margin-top: 30px;
         }
     }
 }
