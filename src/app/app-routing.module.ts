@@ -24,9 +24,10 @@ const routes: Routes = [
   { path: 'matematica-desc', loadChildren: './matematica-desc/matematica-desc.module#MatematicaDescPageModule' },
   { path: 'naturais-desc', loadChildren: './naturais-desc/naturais-desc.module#NaturaisDescPageModule' },
   { path: 'humanas-desc', loadChildren: './humanas-desc/humanas-desc.module#HumanasDescPageModule' },
-  { path: 'escolha-avatar', loadChildren: './escolha-avatar/escolha-avatar.module#EscolhaAvatarPageModule' },  { path: 'tecnico-desc', loadChildren: './tecnico-desc/tecnico-desc.module#TecnicoDescPageModule' },
-  { path: 'boletim', loadChildren: './boletim/boletim.module#BoletimPageModule' }
-
+  { path: 'escolha-avatar', loadChildren: './escolha-avatar/escolha-avatar.module#EscolhaAvatarPageModule' },
+  { path: 'tecnico-desc', loadChildren: './tecnico-desc/tecnico-desc.module#TecnicoDescPageModule' },
+  { path: 'boletim', loadChildren: './boletim/boletim.module#BoletimPageModule' },
+  { path: 'iniciar-trilha', loadChildren: './iniciar-trilha/iniciar-trilha.module#IniciarTrilhaPageModule' }
 ];
 
 @NgModule({

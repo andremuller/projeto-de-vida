@@ -52,7 +52,11 @@ export class AppComponent {
 
         this.router.events.subscribe((event: RouterEvent) => {
             if (event instanceof NavigationEnd && event.url) {
-                if (event.url === '/landing' || event.url === '/login') {
+                if (event.url === '/landing' 
+                    || event.url === '/login'
+                    || event.url === '/iniciar-trilha'
+                    || event.url === '/avatar'
+                    ) {
                     this.menuCtrl.enable(false);
                 } else {
                   this.menuCtrl.enable(true);
