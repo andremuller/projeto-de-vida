@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tecnico-desc',
@@ -6,23 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tecnico-desc.page.scss'],
 })
 export class TecnicoDescPage implements OnInit {
+  public modalAberto = false;
+  constructor(public modalController: ModalController) { }
  
-  public dados:boolean = false;
-  public faltasB1:string;
-  public faltasB2:string;
-  public faltasB3:string;
-  public faltasB4:string;
-   
-
-  constructor() { }
-  mostrarDescDisciplina(id){
-    this.dados = true;
-    this.faltasB1 = "10";
-    this.faltasB2 = "2";
-    this.faltasB3 = "0";
-    this.faltasB4 = "0";
+  abreModal(idUsuario, idDisci){
+    if(this.modalAberto){
+      this.modalAberto = false;
+    }else{
+      this.modalAberto = true;
+    }
   }
   ngOnInit() {
   }
-
+  
 }

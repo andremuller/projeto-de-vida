@@ -13,13 +13,18 @@
 }
 .div-bi b{
     color: #fff;
+    font-size: 1rem;
 }
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
   }
   .dados-aluno{
       text-align: center;
       color: #fff;
+  }
+  .dados-aluno h4{
+      font-size: 1rem;
   }
   .titulo-1{
       margin-top: 2em;
