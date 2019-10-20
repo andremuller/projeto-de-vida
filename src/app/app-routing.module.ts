@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'start', loadChildren: './start/start.module#StartPageModule' },
   { path: 'carreira', loadChildren: './carreira/carreira.module#CarreiraPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'avatar', loadChildren: './avatar/avatar.module#AvatarPageModule' }
+  { path: 'avatar', loadChildren: './avatar/avatar.module#AvatarPageModule' },
+  { path: 'escolha-avatar', loadChildren: './escolha-avatar/escolha-avatar.module#EscolhaAvatarPageModule' }
 ];
 
 @NgModule({
