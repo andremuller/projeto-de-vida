@@ -1,14 +1,3 @@
-.mock {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../assets/images/INTERFACE_LOGIN.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    max-width: 160px;
-    max-height: 200px;
-}
-
 .sup-dir {
     width: 30vw;
     height: 45vw;
@@ -68,14 +57,19 @@
 .container {
     background-color: rgb(48, 33, 78);
     display: flex;
+    flex-direction: column;   
     height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
 
+    .nao-encontrado {
+        color: red;
+    }
+
     .form {
         flex: 0 0 auto;
-        min-width: 200px;
+        min-width: 25vw;
         align-items: center;
         display: flex;
         flex-direction: column;

@@ -16,14 +16,17 @@ export class LoginPage implements OnInit {
     ) {}
 
     public matricula: string;
+    public naoEncontrado: boolean | null;
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.naoEncontrado = null;
+    }
 
     goHome() {
         this.http
             .get(`http://localhost:8000/api/alunos?matricula=${this.matricula}`)
             .subscribe((result: any) => {
-                if (result.data) {
+                if (result.data.length) {
                     this.dadosService.nome = result.data.nome;
                     this.dadosService.matricula = result.data.matricula;
                     this.dadosService.ensinoMedio =
@@ -34,6 +37,7 @@ export class LoginPage implements OnInit {
                         this.navCtrl.navigateForward('home');
                     }
                 } else {
+                    this.naoEncontrado = true;
                     this.dadosService.nome = '';
                     this.dadosService.matricula = '';
                     this.dadosService.ensinoMedio = false;

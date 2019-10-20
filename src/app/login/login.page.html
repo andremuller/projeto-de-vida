@@ -4,6 +4,7 @@
   <div class="inf-dir"></div>
   <div class="inf-esq"></div>
   <div class="container" >
+    <div class="nao-encontrado" *ngIf="naoEncontrado">ALUNO NÃO ENCONTRADO</div>
     <div class="form">
       <ion-input placeholder="Matrícula" [(ngModel)]="matricula"></ion-input>
       <ion-input placeholder="Data de Nascimento"></ion-input>
