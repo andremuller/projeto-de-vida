@@ -48,3 +48,20 @@ ion-toolbar {
     --color: white; /* rgb(108, 193, 187); */
     --background: rgb(48, 33, 78);
 }
+
+.btn2 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #55b472;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn2:hover {
+    background: #11702d;
+    text-decoration: none;
+  }

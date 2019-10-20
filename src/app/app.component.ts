@@ -26,6 +26,11 @@ export class AppComponent {
             title: 'Avatar',
             url: '/avatar',
             icon: 'contact'
+        },
+        {
+            title: 'Boletim',
+            url: '/boletim',
+            icon: 'clipboard'
         }
     ];
 

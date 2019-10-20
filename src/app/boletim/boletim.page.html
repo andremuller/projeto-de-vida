@@ -1,0 +1,71 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  
+      <ion-title>Boletim</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="top-div">
+      <img src="../../assets/images/linha-disciplinas.png" (click)="mostrarDescDisciplina(1)" alt="">
+    </div>
+    <div class="desc-container">
+      <div class="div-desc-disciplina">
+        <div *ngIf="dados" class="dados-aluno">
+          <h4><b>Isadora Sehnem - 9º ano - 2ºbi 2019</b></h4>
+  
+          <div class="info-faltas flex-container">
+  
+            <div class="div-bi">
+              <div>
+                <b>1º Bimestre</b>
+              </div>
+              <div>
+                  Faltas: {{faltasB1}}
+              </div>
+            </div>
+  
+            <div class="div-bi">
+              <div>
+                <b>2º Bimestre</b>
+              </div>
+              <div>
+                  Faltas: {{faltasB2}}
+              </div>
+            </div>
+  
+            <div class="div-bi">
+                <div>
+                    <b>3º Bimestre</b>
+                  </div>
+                  <div>
+                      Faltas: {{faltasB3}}
+                  </div>
+            </div>
+  
+            <div class="div-bi">
+                <div>
+                    <b>4º Bimestre</b>
+                  </div>
+                  <div>
+                      Faltas: {{faltasB4}}
+                  </div>
+            </div>
+  
+          </div>
+  
+          <h4 class="titulo-1"><b>Histórico de  Informação</b></h4>
+  
+          <div class="info-faltas">
+            <p>10/04/2019 - Avaliação de Recuperação</p>
+            <p>08/04/2019 - Atividade de campo</p>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </ion-content>
